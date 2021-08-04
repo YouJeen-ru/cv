@@ -69,3 +69,34 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// reduce size a4 and generate PDF
+
+function scaleCV() {
+    document.body.classList.add('scale-cv')
+}
+
+function removeScale() {
+    document.body.classList.remove('scale-cv')
+}
+let areaCV = document.querySelector('#area-cv')
+let resumeButton = document.querySelector('#resume-button')
+
+let opt = {
+    margin:       0,
+    filename:     'Losev-CV.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        {  format: 'a4', orientation: 'portrait' }
+};
+
+function generateResume() {
+    html2pdf(areaCV, opt)
+}
+
+
+resumeButton.addEventListener('click', () => {
+    scaleCV()
+    generateResume()
+    setTimeout(removeScale, 5000)
+})
