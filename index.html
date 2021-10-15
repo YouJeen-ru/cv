@@ -1,279 +1,409 @@
 <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" sizes="16x16" href="img/favicon.ico" type="image/x-icon">
 
-        <title>Losev Evgeniy - CV</title>
-    </head>
-    <body>
+    <title>Losev Evgeniy - CV</title>
+</head>
+<body>
 
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Evgeniy</a>
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Evgeniy</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home-smile nav__icon'></i>Home
-                        </a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class='bx bx-home-smile nav__icon'></i>Home
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#profile" class="nav__link">
-                            <i class='bx bx-user-circle nav__icon'></i>Profile
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#profile" class="nav__link">
+                        <i class='bx bx-user-circle nav__icon'></i>Profile
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#education" class="nav__link">
-                            <i class='bx bx-book-bookmark nav__icon'></i>Education
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#education" class="nav__link">
+                        <i class='bx bx-book-bookmark nav__icon'></i>Education
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt nav__icon'></i>Skills
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-receipt nav__icon'></i>Skills
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#experience" class="nav__link">
-                            <i class='bx bx-briefcase nav__icon'></i>Experience
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link">
+                        <i class='bx bx-briefcase nav__icon'></i>Experience
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-                    <li class="nav__item">
-                        <a href="#certificates" class="nav__link">
-                            <i class='bx bx-award nav__icon'></i>Certificates
-                        </a>
-                    </li>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bxs-grid-alt'></i>
+        </div>
+    </nav>
+</header>
 
-                </ul>
-            </div>
+<main class="l-main bd-container">
+    <div class="resume" id="area-cv">
+        <div class="resume__left">
+            <section class="home" id="home">
+                <div class="home__container section bd-grid">
+                    <div class="home__data bd-grid">
+                        <img src="img/cv-photo.jpg" alt="" class="home__img">
+                        <h1 class="home__title">Losev <b>EVGENYI</b></h1>
+                        <h3 class="home__profession">Front-end Developer / React JS</h3>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bxs-grid-alt'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main bd-container">
-        <div class="resume" id="area-cv">
-            <div class="resume__left">
-                <section class="home" id="home">
-                    <div class="home__container section bd-grid">
-                        <div class="home__data bd-grid">
-                            <img src="img/photo-cv.jpg" alt="" class="home__img">
-                            <h1 class="home__title">Losev <b>EVGENYI</b></h1>
-                            <h3 class="home__profession">React Front-end Developer</h3>
-
-                            <div>
-                                <a download="" href="pdf/Losev-CV.pdf" class="home__button-movil" id="resume-button-mb">Download</a>
-                            </div>
+                        <div>
+                            <a download="" href="pdf/Losev-CV.pdf" class="home__button-movil" id="resume-button-mb">Download</a>
                         </div>
+                    </div>
 
-                        <div class="home__address bd-grid">
+                    <div class="home__address bd-grid">
                             <span class="home__information">
                                 <i class='bx bx-map home__icon'></i> Belarus, Minsk
                             </span>
-                            <span class="home__information">
+                        <span class="home__information">
                                 <i class='bx bx-envelope home__icon'></i> ex-youjeen@mail.ru
                             </span>
-                            <span class="home__information">
+                        <span class="home__information">
                                 <i class='bx bx-phone-call home__icon'></i> +375 33 697 50 85
                             </span>
+                    </div>
+                </div>
+
+                <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                <i class='bx bxs-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+            </section>
+
+            <section class="social section">
+                <h2 class="section-title">
+                    SOCIAL
+                </h2>
+                <div class="social__container bd-grid">
+
+                    <a href="https://github.com/YouJeen-ru" target="_blank" class="social__link">
+                        <i class='bx bxl-github social__icon'></i>@YouJeen-ru
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/losev-evgeniy/" target="_blank" class="social__link">
+                        <i class='bx bxl-linkedin-square social__icon'></i>@losev-evgeniy
+                    </a>
+
+                    <a href="https://vk.com/evgeny.losev" target="_blank" class="social__link">
+                        <i class='bx bxl-vk social__icon'></i>@evgeny.losev
+                    </a>
+
+                    <a href="https://t.me/YouJeens" target="_blank" class="social__link">
+                        <i class='bx bxl-telegram social__icon'></i>@YouJeens
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Front-end React Developer</h3>
+                            <span class="education__studies">IT-Incubator</span>
+                            <span class="education__year">2021</span>
                         </div>
                     </div>
 
-                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button" ></i>
-
-                    <i class='bx bxs-download generate-pdf' title="Generate PDF" id="resume-button" ></i>
-                </section>
-
-                <section class="social section">
-                    <h2 class="section-title">
-                        SOCIAL
-                    </h2>
-                    <div class="social__container bd-grid">
-
-                        <a href="https://github.com/YouJeen-ru" target="_blank" class="social__link">
-                            <i class='bx bxl-github social__icon'></i>@YouJeen-ru
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/losev-evgeniy/" target="_blank" class="social__link">
-                            <i class='bx bxl-linkedin-square social__icon'></i>@losev-evgeniy
-                        </a>
-
-                        <a href="https://vk.com/evgeny.losev" target="_blank" class="social__link">
-                            <i class='bx bxl-vk social__icon'></i>@evgeny.losev
-                        </a>
-
-                        <a href="https://t.me/YouJeens" target="_blank" class="social__link">
-                            <i class='bx bxl-telegram social__icon' ></i>@YouJeens
-                        </a>
-                    </div>
-                </section>
-
-
-
-                <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
-
-                    <div class="education__container bd-grid">
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Front-end React Developer</h3>
-                                <span class="education__studies">IT-Incubator</span>
-                                <span class="education__year">2020-2021</span>
-                            </div>
+                    <div class="education__content">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
                         </div>
 
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Paramedic</h3>
-                                <span class="education__studies">MINSK STATE MEDICAL COLLEGE</span>
-                                <span class="education__year">2015-2018</span>
-                            </div>
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Paramedic</h3>
+                            <span class="education__studies">MINSK STATE MEDICAL COLLEGE</span>
+                            <span class="education__year">2015-2018</span>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section class="languages section">
-                    <h2 class="section-title">Languages</h2>
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-                    <div class="languages__container">
-                        <ul class="languages__content bd-grid">
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> English (A2)
-                            </li>
+                <div class="skills__content bg-grid">
+                    <ul class="skills__data">
 
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> Russian (Native)
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> JavaScript / TypeScript
+                        </li>
 
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> React / React Hooks
+                        </li>
 
-            </div>
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> Redux / Redux-Thunk / Redux-Toolkit
+                        </li>
 
-            <div class="resume__right">
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> HTML5 / CSS3 / BEM
+                        </li>
 
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Profile</h2>
-                    <p class="profile__description">
-                        Front-end React Developer.Throughout the year I have been striving to
-                        develop as a specialist.Experience in creating, maintaining and improving
-                        web applications from scratch. During development, I have acquired strong
-                        analytical and troubleshooting skills. I believe that I am a good team player
-                        with a strong ability to learn and adapt new skills to your needs.
-                        I am full of energy and , skills and willingness to learn any other
-                        technologies. Mainly I use JavaScript,React, Redux.
-                        In my spare time I also improve my English, exercise and read books.
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> Git / GitHub
+                        </li>
 
-                    </p>
-                </section>
-                <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> Rest API / HTTP / Axios
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                    <div class="experience__container bd-grid">
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
+            <section class="languages section">
+                <h2 class="section-title">Languages</h2>
 
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Front-end Developer</h3>
-                                <span class="experience__company">06.2021 | Freelance</span>
-                                <p class="experience__description">Registration and login forms creation.
-                                    Unit tests coverage. Adaptive legacy code.
-                                    Creation of individual components on React\Redux.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <div class="languages__container">
+                    <ul class="languages__content bd-grid">
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> English (Pre-Intermediate)
+                        </li>
 
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> Russian (Native)
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                    <div class="skills__content bg-grid">
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> HTML5 / CSS3 / BEM
-                            </li>
-
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> JavaScript / TypeScript
-                            </li>
-
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> React / Redux / React Hooks
-                            </li>
-
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Git / GitHub
-                            </li>
-
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Rest API / HTTP
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-
-
-                <section class="interests section">
-                    <h2 class="section-title">Interests</h2>
-
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <i class='bx bx-book-reader interests__icon'></i>
-                            <span class="interests__name">Read</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-plane-alt interests__icon' ></i>
-                            <span class="interests__name">Travel</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bx-run interests__icon' ></i>
-                            <span class="interests__name">CrossFit</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bx-film interests__icon'></i>
-                            <span class="interests__name">Movie</span>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
 
         </div>
-    </main>
 
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-    </a>
+        <div class="resume__right">
 
-        <script src="js/html2pdf.bundle.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+            <section class="profile section" id="profile">
+                <h2 class="section-title">Profile</h2>
+                <p class="profile__description">
+                    I’m a front-end developer who has
+                    a results-focused attitude to creating SPA,
+                    using React(JS/TS), Redux.Throughout the year I have been striving to
+                    develop as a specialist.Experience in creating, maintaining and improving
+                    web applications from scratch. During development, I have acquired strong
+                    analytical and troubleshooting skills. I believe that I am a good team player
+                    with a strong ability to learn and adapt new skills to your needs.
+                    I am full of energy and , skills and willingness to learn any other
+                    technologies.In my spare time I also improve my English and develop apps for open-source.
+
+
+                </p>
+            </section>
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience__container bd-grid">
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                            <span class="experience__line"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Front-end Developer | React JS</h3>
+                            <span class="experience__company">03.2021 - present | Freelance</span>
+                            <p class="experience__description">
+                                - Creation of applications for technical specifications.<br/>
+                                - Implementation of new functionality in projects:<br/>&nbsp; &nbsp; registration / authentication / pagination, etc.<br/>
+                                - Improving performance using: React.memo, React.lazy, React.suspense.<br/>
+                                - Checking the correctness of the code using Unit test.
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                            <span class="experience__line"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">React Developer (during the course)</h3>
+                            <span class="experience__company">03.2021 - 08.2021 | It-Incubator</span>
+                            <p class="experience__description">
+                                Practical study of technologies: TypeScript, React, Redux / Thunk / Toolkit. Working
+                                with REST API. Analysis of technical specifications Development of SPA architecture.
+                                Work on internal projects in a team of 3 people.
+                            </p>
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">1. Todo</span> -
+                                        <a class="experience__works" href="https://todo-token.netlify.app"
+                                           target="_blank">Demo
+                                        </a> |
+                                        <a class="experience__works" href="https://github.com/YouJeen-ru/inc-todolist"
+                                           target="_blank">Code
+                                        </a>
+                                    </span>
+                                <p class="experience__works__description">
+                                    -Creating SPA in React \ TypeScript \ Material UI \ Rest Api \ Unit test. <br/> -Using Redux as
+                                    state management.
+                                </p>
+
+                            </div>
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">2. Simplex</span> -
+                                        <a class="experience__works" href="https://simplex-chat.netlify.app/"
+                                           target="_blank">Demo
+                                        </a> |
+                                        <a class="experience__works" href="https://github.com/YouJeen-ru/simplex-chat"
+                                           target="_blank">Code
+                                        </a>
+                                    </span>
+                                <p class="experience__works__description">
+                                    -Chat in real-time on ChatEngine.io <br/> -Implemented registration and
+                                    authentication Firebase.
+                                </p>
+
+                            </div>
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">3. Social Network</span> -
+
+                                        <a class="experience__works"
+                                           href="https://github.com/YouJeen-ru/social-network-react" target="_blank">Code
+                                        </a>
+                                    </span>
+                                <p class="experience__works__description">
+                                    -Working an application with REST API. Parsing the Flux principle. <br/> -Storing
+                                    data in Redux and local components
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                            <span class="experience__line"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">JavaScript Developer (during the course)</h3>
+                            <span class="experience__company">01.2021 - 02.2021 | Udemy</span>
+                            <p class="experience__description">
+                                Creating a full application on your own framework.
+                            </p>
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">1. Excel</span> -
+                                        <a class="experience__works" href="https://youjeen-ru.github.io/excel-clone/"
+                                           target="_blank">Demo
+                                        </a> |
+                                        <a class="experience__works" href="https://github.com/YouJeen-ru/excel-clone"
+                                           target="_blank">Code
+                                        </a>
+                                    </span>
+                                <p class="experience__works__description">-Learning JavaScript ES6+ in Practice. Working
+                                    with Git.<br/>
+                                    -Implementation of OOP in the app, parsing of the principle of SOLID.<br/>
+                                    -DOM manipulation, state management. Routing and create new pages. <br/>
+                                </p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                            <span class="experience__line line"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Front-end developer / HTML-coder (during the course)</h3>
+                            <span class="experience__company">10.2020 - 12.2020 | Glo Academy</span>
+                            <p class="experience__description">Practical learning of the basics of HTML\CSS.<br/>
+                                Semantic layout based on Figma layouts Basic JavaScript ES6+ , React.js.
+                            </p>
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">1. Willberries</span> - <a
+                                            class="experience__works" href="https://youjeen-ru.github.io/willberries/"
+                                            target="_blank">Demo
+                                    </a> |
+                                    <a class="experience__works" href="https://github.com/YouJeen-ru/willberries"
+                                       target="_blank">Code
+                                    </a>
+                                </span>
+                                <p class="experience__works__description">-Adaptive website layout, implementing simple
+                                    ES6 validation<br/>
+                                    -Product loading by working with Rest Api, product search on the site.
+                                </p>
+                            </div>
+
+
+                            <div class="experience-example__container">
+                                    <span class="experience__example">
+                                        <span class="experience__example-title">2. SpaceX  -</span>
+                                        <a class="experience__works" href="https://youjeen-ru.github.io/spacex-react"
+                                           target="_blank">Demo
+                                        </a> |
+                                        <a class="experience__works" href="https://github.com/YouJeen-ru/spacex-react"
+                                           target="_blank">Code
+                                        </a>
+                                    </span>
+                                <p class="experience__works__description">-Implementing SPA on class components.<br/>
+                                    -Working with Rest Api by writing custom hooks. Content routing<br/>
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+</main>
+
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+</a>
+
+<script src="js/html2pdf.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
